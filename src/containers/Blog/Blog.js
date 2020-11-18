@@ -15,7 +15,7 @@ class Blog extends Component {
 
     componentDidMount() {
         // usually takes url as an argument
-        axios.get('https://jsonplaceholder.typicode.com/posts').then(response => {
+        axios.get('/posts').then(response => {
             const posts = response.data.slice(0, 4);
             // can be used to add other values to the objects if needed
             // one example though
