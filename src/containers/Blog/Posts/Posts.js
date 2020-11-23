@@ -11,6 +11,7 @@ class Posts extends Component {
 
 
   componentDidMount() {
+    console.log(this.props);
     // usually takes url as an argument
     axios.get('/posts').then(response => {
       const posts = response.data.slice(0, 4);
