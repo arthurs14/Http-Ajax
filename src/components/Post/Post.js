@@ -14,5 +14,5 @@ const post = ({ clicked, title, author }) => (
     </article>
 );
 
-
+// export default withRouter(post);
 export default post;
