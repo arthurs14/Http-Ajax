@@ -10,7 +10,6 @@ class Posts extends Component {
     posts: [],
   };
 
-
   componentDidMount() {
     // usually takes url as an argument
     axios.get('/posts').then(response => {
