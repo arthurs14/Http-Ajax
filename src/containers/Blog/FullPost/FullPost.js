@@ -29,7 +29,7 @@ class FullPost extends Component {
         const { loadedPost } = this.state;
         let post = <p style={{ textAlign: 'center' }}>Please select a Post!</p>;
 
-        if (this.props.id) {
+        if (this.props.match.params.id) {
             post = <p style={{ textAlign: 'center' }}>Loading...</p>;
         }
 
